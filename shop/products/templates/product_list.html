@@ -5,7 +5,7 @@
     {% for product in products %}
     <li class="product-item">
         <strong>{{ product.name }}</strong><br><br>
-        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image" width="100px"><br><br>
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image" width="150px"><br><br>
         <span><strong>${{ product.price }}</strong></span><br><br>
         <a href="{% url 'product_detail' product.pk %}" class="button">View Details</a>
     </li>
