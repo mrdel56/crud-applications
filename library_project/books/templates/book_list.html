@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Library - Book List</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+  <h1>Library</h1>
+  <a href="{% url 'book_create' %}" class="button">Add New Book</a>
+  <ul>
+    {% for book in books %}
+    <li>
+      <img src="{{ book.image.url }}" alt="{{ book.title }}" width="100">
+      <p><strong>{{ book.title }}</strong> by {{ book.author }}</p>
+      <a href="{% url 'book_update' book.pk %}" class="button"> Edit</a> |
+      <a href="{% url 'book_delete' book.pk %}" class="button delete"> Delete</a>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>
