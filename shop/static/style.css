@@ -64,6 +64,15 @@ form {
     max-width: 600px;
     margin: 0 auto;
 }
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
 
 .product-detail {
     max-width: 600px;
