@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Keep inline for button look */
+    
+  }
+
+.button:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+.button.delete {
+    background-color: #dc3545; /* Red for delete */
+  }
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.delete-confirmation {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
